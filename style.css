@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cormorant Garamond", serif;
+  background-color: #0093e9;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(39,199,171,1) 0%, rgba(70,143,197,1) 90% );
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+    max-width: 35rem;
+  width: 70%;
+  height:90%;
+  margin:2rem;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 1rem;
+  border: 0.2rem solid rgba(173, 216, 230, 0.653);
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(0, 0, 0, 0.4);
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(1, 7, 14, 0.429) 0.1%, rgba(1, 5, 81, 0.674) 99.8% );
+}
+form{
+    padding:0rem 1rem;
+    margin:0rem 1rem;
+    width:100%;
+}
+.form-group{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    padding:0.2rem 1rem;
+    margin: 0.2rem 1rem;
+    font-size:1.2rem;
+    font-weight:500;
+    letter-spacing:1px;
+}
+label {
+    margin-bottom:0.3rem;
+    padding:0.2rem;
+}
+.form-group input{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1rem;
+    padding:0.2rem;
+    background:transparent;
+    outline: none;
+    
+    color:white;
+
+
+}
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    
+    border-color: #fff
+  }
+
+
+input::placeholder{
+    color:rgba(255, 255, 255, 0.759);
+}
+button{
+    margin: 0.5rem 0rem;
+    padding: 0.5rem;
+    width: 100%;
+    background-color: lightblue;
+    border:2px solid transparent;
+    border-radius:6px;
+    color: rgba(2, 32, 72, 0.585);
+    font-size:1rem;
+    font-weight:bold;
+
+}
+button:hover {
+    opacity: 0.6;
+}
+input:valid{
+    border-bottom:3px solid rgb(69, 155, 69) ;
+}
+input:invalid{
+    border-bottom:3px solid rgb(231, 105, 83) ;
+
+}
